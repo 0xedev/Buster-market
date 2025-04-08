@@ -9,17 +9,18 @@ module.exports = {
       port: 8545,
       network_id: "*",
     },
-    matic: {
+    BASE: {
       provider: () =>
         new HDWalletProvider(
           mnemonic,
-          `https://matic-mumbai.chainstacklabs.com`
+          //changes to your own wallet mnemonic and infura project id
+          `https://base-mainnet.g.alchemy.com/v2/jprc9bb4eoqJdv5K71YUZdhKyf20gILa`
         ),
-      network_id: 80001,
+      network_id: 8453,
       confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true,
-      chainId: 80001,
+      chainId: 8453,
     },
   },
   contracts_directory: "./contracts",

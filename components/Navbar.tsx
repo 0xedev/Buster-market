@@ -13,7 +13,7 @@ function Navbar() {
         <div className="flex flex-row justify-between items-center h-full">
           <Link href="/" passHref>
             <span className="font-semibold text-xl cursor-pointer">
-              Polymarket
+              Buster market
             </span>
           </Link>
           {!router.asPath.includes("/market") &&

@@ -10,8 +10,4 @@ contract PolyToken is ERC20 {
         _mint(msg.sender, 100000 * 10**18);
     }
 
-    function mint(address to, uint256 amount) external {
-        require(msg.sender == owner, "Only owner can mint");
-        _mint(to, amount);
-    }
 }
